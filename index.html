@@ -12,14 +12,22 @@
 
         h4 {
             color: white;
+            text-align: center;
         }
 
         .navbar {
-            background-color: whitesmoke;
+            background-color: rgb(26, 25, 25);
             color: black;
-            padding-top: 1rem;
+            padding-top: 0.7rem;
+            margin-top: 1rem;
             padding-bottom: 1rem;
             font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 40rem;
+            border-radius: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            border-color: white;
 
         }
 
@@ -34,20 +42,50 @@
         }
 
         a {
-            color:rgb(212, 212, 212);
+            color: rgb(212, 212, 212);
         }
 
         .color {
-            background-color: rgb(37, 37, 37);
-            padding-top: 1rem;
+            background-color: rgb(26, 25, 25);
+            padding-top: 0.5rem;
             padding-bottom: 1rem;
             padding-left: 2rem;
             padding-right: 2rem;
             border-radius: 2rem;
+            margin-top: 2rem;
         }
 
         .rounded-corners {
             border-radius: 1rem;
+        }
+
+        .button {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: 1rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            padding-left: .5rem;
+            padding-right: .5rem;
+            border-color: black;
+            border-radius: 0.7rem;
+            border-color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-evenly;
+            max-width: 50rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .logo {
+            max-width: 10rem;
         }
     </style>
     <title>George's Site</title>
@@ -55,28 +93,79 @@
 
 <body>
     <div class="navbar">
-        <div class="text-center"> George's Website </div>
+        <div class="container">
+            <div><a href="https://www.spigotmc.org/resources/magic-fish.81413/"><button class="button"
+                        class="padding">Home</button></a></div>
+            <div><a href="https://www.spigotmc.org/resources/magic-fish.81413/"><button class="button"
+                        class="padding">About</button></a></div>
+            <div><a href="https://www.spigotmc.org/resources/magic-fish.81413/"><button class="button"
+                        class="padding">Contact</button></a>
+            </div>
+        </div>
+
     </div>
     <div class="spacing">
         <h1 class="text-center">Welcome to George's Website!</h1>
 
         <div class="color" class="rounded-corners">
-            <h4>What is George's Website?</h4>
+            <h4>Example Text Header</h4>
             <p>
-                This is George McCain's custom website. Although it's pretty basic now, it's gonna look beautiful later.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque semper nec magna sit amet vehicula.
+                Etiam convallis magna quis ipsum lacinia, ut lobortis felis tempor. Donec volutpat nunc id tellus
+                laoreet vehicula. Suspendisse consequat, lorem dignissim tincidunt condimentum, turpis enim pretium
+                sapien, sed convallis lorem dui vel ex. Donec facilisis, nibh ac fringilla volutpat, nibh dui congue
+                eros, in imperdiet mauris risus et massa. Curabitur luctus et ligula non congue. Mauris quis arcu in
+                nulla varius pulvinar ut eu risus. Nulla facilisi. Curabitur sed libero eu velit lobortis tincidunt id
+                ac neque. Maecenas mollis augue sed massa consectetur, ac rutrum libero pretium. Suspendisse facilisis
+                tempus felis egestas iaculis. Donec neque libero, eleifend eu luctus nec, congue porttitor arcu.
+                Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sed vulputate magna. Vivamus sed
+                tortor sed tellus maximus laoreet et et magna.
             </p>
+        </div>
+
+        <div class="color" class="rounded-corners">
             <h4>
-                <span> Who is George? </span>
+                <span>Example Text Header</span>
             </h4>
             <p>
-                I am a 15 year old boy who likes coding and soccer. You may know me from my work, (i.e. Founder of
-                renowned
-                plugin MagicFish!)
-                This is the link to <a href="https://www.spigotmc.org/resources/magic-fish.81413">
+                Phasellus sagittis bibendum libero. Praesent venenatis massa porta libero vehicula fringilla. In a
+                consectetur nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos. Integer ornare fermentum eros. Nunc nec tellus lectus. Nam semper et elit eu pretium. Nulla
+                nec lorem risus. Curabitur finibus dui non dui laoreet, dapibus maximus sapien hendrerit. Vestibulum
+                ligula nibh, maximus vel feugiat rutrum, egestas at nisi. Maecenas malesuada nibh sit amet magna
+                vulputate eleifend. Vestibulum tincidunt lacus sit amet aliquet blandit. Fusce consequat turpis eget
+                ipsum mollis lobortis. This is the link to <a
+                    href="https://www.spigotmc.org/resources/magic-fish.81413">
                     MagicFish </a>
             </p>
         </div>
+        <div class="color" class="rounded-corners">
+            <h4>
+                <span>Example Text Header</span>
+            </h4>
+            <p>
+                Cras suscipit, turpis in malesuada rutrum, risus enim eleifend orci, et porta nunc massa id leo. Nulla
+                vulputate nisl eu tortor facilisis fringilla. In at erat sed arcu posuere luctus in sit amet augue.
+                Aliquam pretium justo et metus consectetur porta. Mauris imperdiet at nisl eget mollis. In ac ligula ut
+                risus iaculis efficitur pellentesque imperdiet massa. Vivamus quis sem a nulla accumsan consequat eget
+                ut metus. Nunc ultrices odio eu maximus sollicitudin. Fusce interdum mauris at dolor eleifend ornare.
+                Suspendisse et hendrerit arcu. Fusce varius feugiat odio. Nullam sed tempor metus. Praesent id
+                scelerisque massa. Sed sit amet purus non augue luctus laoreet id non odio. Vivamus blandit, leo sed
+                volutpat sollicitudin, augue magna venenatis odio, vel ullamcorper massa risus a augue.
+
+                Etiam tellus purus, rutrum a dui ut, mollis luctus lacus. Aliquam convallis quam vitae convallis
+                posuere. Curabitur erat urna, elementum nec auctor a, imperdiet a massa. Praesent in purus vel lorem
+                accumsan volutpat. Praesent tempor nibh mi, ut rutrum ante ornare vel. Sed ut ante laoreet, sollicitudin
+                lorem auctor, gravida erat. Phasellus interdum vehicula elit sed porta. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia curae; Mauris sit amet odio sed metus faucibus gravida
+                sed bibendum nisl. Sed vel consequat nisi. Fusce mattis viverra nunc, eget auctor neque bibendum quis.
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas
+                accumsan rutrum pretium.
+            </p>
+        </div>
     </div>
+
+<img src=logo.png alt=logo class="logo"/>
 
 </body>
 
