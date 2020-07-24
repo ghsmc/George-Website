@@ -10,6 +10,11 @@
             background-color: rgb(26, 25, 25);
         }
 
+        .imagesize {
+            width: 50;
+            height: 50;
+        }
+
         h4 {
             color: white;
             text-align: center;
@@ -35,6 +40,21 @@
 
         }
 
+        .buttongame {
+            background-color: rgb(41, 41, 41);
+            color: black;
+            padding-top: 0.4rem;
+            margin-top: 1rem;
+            padding-bottom: 0.5rem;
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 40rem;
+            border-radius: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            border-color: white;
+        }
+
         .spacing {
             max-width: 40rem;
             margin-left: auto;
@@ -43,6 +63,10 @@
 
         .text-center {
             text-align: center;
+        }
+
+        .text-left {
+            text-align: left;
         }
 
         a {
@@ -66,7 +90,7 @@
 
         .button {
             background-color: rgb(26, 25, 25);
-            color: rgb(204, 204, 204);
+            color: rgb(155, 16, 136);
             font-weight: bold;
             font-size: 1rem;
             padding-top: .5rem;
@@ -76,6 +100,11 @@
             border-color: black;
             border-radius: 0.7rem;
             border-color: rgb(88, 0, 88);
+
+        }
+
+        .bgpadding {
+            margin-bottom: 1rem;
         }
 
         .container {
@@ -97,20 +126,40 @@
             font-style: italic;
         }
 
+        .redbutton {
+            display: contents;
+        }
+
+        .redbutton:click {
+            background-color: red;
+            text-transform: none;
+        }
+
+        .lifelost {
+            display: none;
+        }
+
+        .win {
+            display: contents;
+        }
+
         button:hover {
-            background-color: rgb(88, 0, 88);
+            background-color: rgb(240, 210, 240);
             border-color: white;
-            transform: rotate(1080deg);
             transform: scale(1.1);
         }
 
         .highlight {
-            background-color:   rgba(88, 0, 88, 0.534);;
-            color:  rgb(139, 137, 137);
+            background-color: rgba(88, 0, 88, 0.534);
+            color: rgb(139, 137, 137);
             font-weight: bold;
         }
 
-
+        .redhighlight {
+            background-color: rgba(240, 6, 6, 0.534);
+            color: rgb(139, 137, 137);
+            font-weight: bold;
+        }
     </style>
     <title>George's Site</title>
 </head>
@@ -121,71 +170,77 @@
         <div class="container">
             <div><a href="index.html"><button class="button" class="padding">Home</button></a></div>
             <div><a href="about.html"><button class="button" class="padding">About</button></a></div>
-            <div><a href="contact.html"><button class="button" class="padding">Contact</button></a>
+            <div><a href="guess.html"><button class="button" class="padding">Play the Guessing Game!</button></a>
             </div>
         </div>
 
     </div>
     <div class="spacing">
-        <h1 class="text-center">George's Website</h1>
+        <script>
+
+        </script>
+        <h1 class="text-center">Hello! Welcome to George's Site.</h1>
 
         <div class="color" class="rounded-corners">
-            <h4>Example Text Header</h4>
+            <h4>George's Game</h4>
             <p>
-                <span class="highlight">Lorem </span>ipsum dolor sit amet, consectetur adipiscing  elit. Quisque semper nec magna sit amet vehicula.
-                Etiam convallis magna quis ipsum lacinia, ut lobortis felis tempor. Donec volutpat nunc id tellus
-                laoreet vehicula. <span class="highlight">  Suspendisse </span>consequat, lorem  dignissim tincidunt condimentum, turpis enim pretium
-                sapien, sed <span class="highlight"> convallis </span> lorem dui vel ex. Donec facilisis, nibh ac fringilla volutpat, nibh dui congue
-                eros, in imperdiet mauris risus et massa. Curabitur luctus et ligula non congue. Mauris quis arcu in
-                nulla varius <span class="highlight"> pulvinar </span> ut eu risus. Nulla facilisi. Curabitur sed libero eu velit lobortis tincidunt id
-                ac neque. Maecenas mollis augue sed massa consectetur, ac rutrum libero pretium. Suspendisse facilisis
-                tempus felis egestas iaculis. Donec neque libero, eleifend eu luctus nec, congue porttitor arcu.
-                Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed sed vulputate magna. Vivamus sed
-                tortor sed tellus maximus laoreet et et magna.
+                Hello, and Welcome to<span class="highlight"> George's Button Game!</span> As you can see below, there
+                is a <span class="highlight"> 16 </span> buttons in a 4x4 grid.
+                Behind one of the buttons is a <span class="redhighlight"> red dot! </span> Behind the others is
+                nothing! Take your chances and click
+                through different buttons to find the red dot, but be wary: each time you click a button that does not
+                have the dot behind it, you'll lose a life. You have <span class="highlight"> ten</span> lives. Good
+                luck.
             </p>
         </div>
 
         <div class="color" class="rounded-corners">
-            <h4>
-                <span>Example Text Header</span>
-            </h4>
-            <p>
-                Phasellus sagittis bibendum libero. Praesent venenatis massa porta libero vehicula fringilla. In a
-                consectetur nibh. <span class="highlight"> Class </span>aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                himenaeos. Integer ornare fermentum eros. Nunc nec tellus lectus. Nam semper et elit eu pretium. Nulla
-                nec lorem risus. Curabitur finibus dui non dui laoreet, dapibus maximus sapien hendrerit. Vestibulum
-                ligula nibh, maximus vel <span class="highlight">feugiat </span>rutrum, egestas at nisi. Maecenas malesuada nibh sit amet magna
-                vulputate eleifend. Vestibulum <span class="highlight">tincidunt </span>lacus sit amet aliquet blandit. Fusce consequat turpis eget
-                ipsum mollis lobortis. This is the link to <a
-                    href="https://www.spigotmc.org/resources/magic-fish.81413">
-                    MagicFish </a>
-            </p>
+            <div class="navbar">
+                <div class="container" class="bgpadding">
+                    <div><a href=""><button id="b1" class="button bgpadding">Button 1</button></a></div>
+                    <div><a href=""><button id="b2" class="button bgpadding">Button 2</button></a></div>
+                    <div><a href=""><button id="b3" class="button bgpadding">Button 3</button></a></div>
+                    <div><a href=""><button id="b4" class="button bgpadding">Button 4</button></a></div>
+                </div>
+                <div class="container" class="bgpadding">
+                    <div><a href=""><button id="b5" class="button bgpadding">Button 5</button></a></div>
+                    <div><a href=""><button id="b6" class="button bgpadding">Button 6</button></a></div>
+                    <div><a href=""><button id="b7" class="button bgpadding">Button 7</button></a></div>
+                    <div><a href=""><button id="b8" class="button bgpadding">Button 8</button></a></div>
+                </div>
+                <div class="container" class="bgpadding">
+                    <div><a href=""><button id="b9" class="button bgpadding">Button 9</button></a></div>
+                    <div><a href=""><button id="b10" class="button bgpadding">Button 10</button></a></div>
+                    <div><a href=""><button id="b11" class="button bgpadding">Button 11</button></a></div>
+                    <div><a href=""><button id="b12" class="button bgpadding">Button 12</button></a></div>
+                </div>
+                <div class="container" class="bgpadding">
+                    <div><a href=""><button id="b13" class="button bgpadding">Button 13</button></a></div>
+                    <div><a href=""><button id="b14" class="button bgpadding">Button 14</button></a></div>
+                    <div><a href=""><button id="b15" class="button bgpadding">Button 15</button></a></div>
+                    <div><a href=""><button id="b16" class="button bgpadding">Button 16</button></a></div>
+                </div>
+            </div>
         </div>
-        <div class="color" class="rounded-corners">
-            <h4>
-                <span>Example Text Header</span>
-            </h4>
-            <p>
-                Cras suscipit, turpis in malesuada rutrum, risus enim eleifend orci, et porta nunc massa id leo. Nulla
-                vulputate nisl eu tortor facilisis fringilla. In at erat sed arcu posuere luctus in sit amet augue.
-                Aliquam pretium justo et metus consectetur porta. Mauris imperdiet at nisl eget mollis. In ac ligula ut
-                risus iaculis efficitur pellentesque imperdiet massa. Vivamus quis sem a nulla accumsan consequat eget
-                ut metus. Nunc ultrices odio eu maximus sollicitudin. Fusce interdum mauris at dolor eleifend ornare.
-                Suspendisse et hendrerit arcu. Fusce varius feugiat odio. Nullam sed tempor metus. Praesent id
-                scelerisque massa. Sed sit amet purus non augue luctus laoreet id non odio. Vivamus blandit, leo sed
-                volutpat sollicitudin, augue magna venenatis odio, vel ullamcorper massa risus a augue.
 
-                Etiam tellus purus, rutrum a dui ut, mollis luctus lacus. Aliquam convallis quam vitae convallis
-                posuere. Curabitur erat urna, elementum nec auctor a, imperdiet a massa. Praesent in purus vel lorem
-                accumsan volutpat. Praesent tempor nibh mi, ut rutrum ante ornare vel. Sed ut ante laoreet, sollicitudin
-                lorem auctor, gravida erat. Phasellus interdum vehicula elit sed porta. Vestibulum ante ipsum primis in
-                faucibus orci luctus et ultrices posuere cubilia curae; Mauris sit amet odio sed metus faucibus gravida
-                sed bibendum nisl. Sed vel consequat nisi. Fusce mattis viverra nunc, eget auctor neque bibendum quis.
-                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas
-                accumsan rutrum pretium.
-            </p>
+        <div class="color" class="rounded-corners">
+            <h4 class="text-left">LIVES:</h4>
+        <img src=heart.png alt="heart" width="50" height="50">
+        <img src=heart.png alt="heart" width="50" height="50">
+        <img src=heart.png alt="heart" width="50" height="50">
+        <img src=heart.png alt="heart" width="50" height="50">
+        <img src=heart.png alt="heart" width="50" height="50">
+        <img src=heart.png alt="heart" width="50" height="50">
+        <img src=heart.png alt="heart" width="50" height="50">
+        <img src=heart.png alt="heart" width="50" height="50">
+        <img src=heart.png alt="heart" width="50" height="50">
+        <img src=heart.png alt="heart" width="50" height="50">
+            <h4 class="text-left">WINS:</h4>
+            <img src=trophy.png alt="trophy" width="50" height="50">
+            <img src=trophy.png alt="trophy" width="50" height="50">
+            
+
         </div>
-    </div>
 
 </body>
 

@@ -106,7 +106,6 @@
 
         .highlight {
             background-color: rgba(88, 0, 88, 0.534);
-            ;
             color: rgb(139, 137, 137);
             font-weight: bold;
         }
@@ -130,7 +129,9 @@
         .contactinfo:hover+.hide {
             display: block;
             color: rgb(153, 40, 153);
+            cursor: pointer;
         }
+
     </style>
     <title>George's Site</title>
 </head>
@@ -141,28 +142,69 @@
         <div class="container">
             <div><a href="index.html"><button class="button" class="padding">Home</button></a></div>
             <div><a href="about.html"><button class="button" class="padding">About</button></a></div>
-            <div><a href="contact.html"><button class="button" class="padding">Contact</button></a>
+            <div><a href="guess.html"><button class="button" class="padding">Play the Guessing Game!</button></a>
             </div>
         </div>
 
     </div>
     <div class="spacing">
-        <h1 class="text-center">Contact Information</h1>
+        <h1 class="text-center">Guessing Game</h1>
+            <script>
+                var min = 1;
+                var max = 100;
+                var tries = 5;
+                var answer = Math.floor(Math.random() * (max - min + 1)) + min;
+                var guess = '';
+                var message = 'You have ' + tries + ' guesses to guess a number between ' + min + ' and ' + max + ':';
 
-        <div class="color" class="rounded-corners">
-            <h4 class="contactinfo left">Email</h4>
-            <div class="hide">My email is: <strong> example@gmail.com.</strong></div>
+                while (tries > 0) {
 
+                    guess = prompt(message, guess);
 
+                    if (guess == null) {
+                        alert('Quitting game now.');
+                        break;
+                    }
 
-            <h4 class="contactinfo left">Phone Number</h4>
-            <div class="hide">My number is: <strong> 873-131-0913.</strong></div>
+                    else if (isFinite(guess) && guess != '') {
+
+                        guess = parseInt(guess);
+
+                        if (guess < min) {
+                            alert('Your guess should be no less than ' + min + '.');
+                        }
+                        else if (guess > max) {
+                            alert('Your guess should be no greater than ' + max + '.');
+                        }
+                        else if (guess > answer) {
+                            alert('Your guess is too high.');
+                        }
+
+                        else if (guess < answer) {
+                            alert('Your guess is too low');
+                        }
+
+                        else {
+                            alert('Great job, you got it!');
+                            break;
+                        }
+                    }
+
+                    else {
+                        alert('You must enter a number as a guess.');
+                    }
+
+                    tries = tries - 1;
+                }
+
+                if (tries == 0) {
+                    alert('You ran out of tries.  The number was ' + answer + '.');
+                }
+
+            </script>
             </h4>
         </div>
-
     </div>
-
-
 </body>
 
 </html>
