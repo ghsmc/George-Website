@@ -159,16 +159,16 @@
 
                 while (tries > 0) {
 
-                    guess = prompt(message, guess);
+                    guess = prompt(message);
 
-                    if (guess == null) {
+                    if (guess == null || guess == '') {
                         alert('Quitting game now.');
                         break;
                     }
 
-                    else if (isFinite(guess) && guess != '') {
-
+                    else {
                         guess = parseInt(guess);
+            
 
                         if (guess < min) {
                             alert('Your guess should be no less than ' + min + '.');
@@ -188,10 +188,6 @@
                             alert('Great job, you got it!');
                             break;
                         }
-                    }
-
-                    else {
-                        alert('You must enter a number as a guess.');
                     }
 
                     tries = tries - 1;
